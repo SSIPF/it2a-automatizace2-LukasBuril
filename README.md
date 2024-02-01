@@ -1,1 +1,11 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ZUT2-T-u)
+
+@echo off
+
+    for /f "tokens=1-3 delims=,", %%a in (uzivatele.txt) do (
+        net user "%%a" %%b /add
+    echo Byl tvoren uzivatel "%%a"
+        net localgroup %%c /add
+    echo Byla vytvorena skupina "%%c"
+        net localgroup "%%c" "%%a" /add
+    echo Uzivatel %%a byl pridan do skupiny %%c
+    )
