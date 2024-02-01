@@ -1,0 +1,3 @@
+Nicolas Bulhar,heslo1,skupina1
+Petr Pavel,heslo2,skupina2
+Haland Novotný,heslo3,skupina3
